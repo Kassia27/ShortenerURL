@@ -1,11 +1,11 @@
 <?php
-$service ='localhost';
+
+$host ='localhost';
 $user ='root';
 $password ='';
 $db = 'redutor-url';
 
-$conn = mysqli_connect($service,$user,$password,$db);
+$conn = new mysqli($host,$user,$password,$db);
 
-if($conn){
-    echo 'Conectado com o Banco de Dados';
-}
+if ($conn->connect_errno)
+      echo('Falha na conexão');
