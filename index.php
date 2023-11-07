@@ -19,13 +19,13 @@
 </head>
 <body>
     <h2>Redutor de URL</h2>
-    
+
     <form method="POST">
         <input type="url" name="url" placeholder="Cole a URL" >
         <button type="submit" name="buttom">Reduzir</button>
     </form>
 
-    <p> URL reduzida</p>
+    <h3>URL reduzida</h3>
     <input type="text" readonly value="">
 </body>
 </html>
