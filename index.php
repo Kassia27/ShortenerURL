@@ -8,6 +8,8 @@
     $conn->query("INSERT INTO shortene_url(url) VALUES ('$url')");
    }
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +28,7 @@
     </form>
 
     <h3>URL reduzida</h3>
-    <input type="text" readonly value="">
+    <input type="text" readonly value="<?php echo $_POST['url']?>">
+    
 </body>
 </html>
